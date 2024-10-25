@@ -1,0 +1,5 @@
+# Ignorar archivo de credenciales de Firebase
+config/microservicios-evaluacion-firebase-adminsdk-1ogar-fbda08c283.json
+
+# Ignorar archivo .env con variables de entorno
+.env
