@@ -4,5 +4,8 @@
     "dotenv": "^16.4.5",
     "firebase": "^11.0.1",
     "firebase-admin": "^12.7.0"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }
