@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Cargar usuarios
     document.getElementById('cargarUsuarios').addEventListener('click', function() {
-        fetch('https://microservicios-evaluacion-api-gateway.onrender.com/usuarios/list.usuarios')
+        fetch('http://localhost:9001/usuarios/list.usuarios')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Error en la respuesta del servidor');
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cargar productos
     document.getElementById('cargarProductos').addEventListener('click', function() {
-        fetch('https://microservicios-evaluacion-api-gateway.onrender.com/productos/list.productos')
+        fetch('http://localhost:9001/productos/list.productos')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Error en la respuesta del servidor');
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const precio = document.getElementById('precio').value;
         const stock = document.getElementById('stock').value;
 
-        fetch('https://microservicios-evaluacion-api-gateway.onrender.com/productos/add.producto', {
+        fetch('http://localhost:9001/productos/add.producto', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const nombre = document.getElementById('nombreUsuario').value;
         const correo = document.getElementById('correo').value;
 
-        fetch('https://microservicios-evaluacion-api-gateway.onrender.com/usuarios/add.usuario', {
+        fetch('http://localhost:9001/usuarios/add.usuario', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
